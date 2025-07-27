@@ -23,4 +23,6 @@ def rank_sections(sections, persona, task, top_k=10):
     for idx, sec in enumerate(scored_sections[:top_k]):
         sec["importance_rank"] = idx + 1
 
+
     return scored_sections[:top_k]
+

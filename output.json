@@ -11,7 +11,11 @@
         ],
         "persona": "Travel Planner",
         "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
-        "processing_timestamp": "2025-07-27T19:28:51.672724"
+
+       
+
+        "processing_timestamp": "2025-07-27T22:02:10.875949"
+
     },
     "extracted_sections": [
         {
@@ -33,14 +37,14 @@
             "page_number": 6
         },
         {
-            "document": "South of France - Cities.pdf",
-            "section_title": "Aerospace Industry",
+            "document": "South of France - Tips and Tricks.pdf",
+            "section_title": "Introduction",
             "importance_rank": 4,
-            "page_number": 9
+            "page_number": 1
         },
         {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Conclusion",
+            "document": "South of France - Cities.pdf",
+            "section_title": "Aerospace Industry",
             "importance_rank": 5,
             "page_number": 9
         },
@@ -58,21 +62,21 @@
         },
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Introduction",
+            "section_title": "Conclusion",
             "importance_rank": 8,
-            "page_number": 1
+            "page_number": 9
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "section_title": "Conclusion",
+            "importance_rank": 9,
+            "page_number": 13
         },
         {
             "document": "South of France - Restaurants and Hotels.pdf",
             "section_title": "Budget-Friendly Hotels",
-            "importance_rank": 9,
-            "page_number": 8
-        },
-        {
-            "document": "South of France - Things to Do.pdf",
-            "section_title": "Water Sports",
             "importance_rank": 10,
-            "page_number": 2
+            "page_number": 8
         }
     ],
     "subsection_analysis": [
@@ -92,13 +96,13 @@
             "page_number": 6
         },
         {
-            "document": "South of France - Cities.pdf",
-            "refined_text": "\u2022 Airbus Factory Tours: Visit the Airbus factory for a fascinating tour of one of the world's leading aircraft manufacturers. \u2022 Aeroscopia Museum: Explore the history of aviation at the Aeroscopia Museum, which features a collection of historic aircraft.",
-            "page_number": 9
+            "document": "South of France - Tips and Tricks.pdf",
+            "refined_text": "Planning a trip to the South of France requires thoughtful preparation to ensure a comfortable and enjoyable experience. This guide covers everything from packing essentials to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with kids, or in a group, this guide will help you make the most of your trip. General Packing Tips and Tricks \u2022 Layering: The weather can vary, so pack layers to stay comfortable in different temperatures. \u2022 Versatile Clothing: Choose items that can be mixed and matched to create multiple",
+            "page_number": 1
         },
         {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": "Packing for a trip to the South of France involves considering the season, planned activities, and the needs of both adults and children. By following this comprehensive guide and incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the most of your travel experience. Bon voyage! A Comprehensive Guide to Traditions and Culture in the South of France Introduction The South of France, with its picturesque landscapes, charming villages, and vibrant cities, is not only a feast for the eyes but also a treasure trove of cultural traditions and heritage.",
+            "document": "South of France - Cities.pdf",
+            "refined_text": "\u2022 Airbus Factory Tours: Visit the Airbus factory for a fascinating tour of one of the world's leading aircraft manufacturers. \u2022 Aeroscopia Museum: Explore the history of aviation at the Aeroscopia Museum, which features a collection of historic aircraft.",
             "page_number": 9
         },
         {
@@ -113,18 +117,18 @@
         },
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": "Planning a trip to the South of France requires thoughtful preparation to ensure a comfortable and enjoyable experience. This guide covers everything from packing essentials to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with kids, or in a group, this guide will help you make the most of your trip. General Packing Tips and Tricks \u2022 Layering: The weather can vary, so pack layers to stay comfortable in different temperatures.",
-            "page_number": 1
+            "refined_text": "Packing for a trip to the South of France involves considering the season, planned activities, and the needs of both adults and children. By following this comprehensive guide and incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the most of your travel experience. A Comprehensive Guide to Traditions and Culture in the South of France Introduction The South of France, with its picturesque landscapes, charming villages, and vibrant cities, is not only a feast for the eyes but also a treasure trove of cultural traditions and heritage. This region, known for its rich history and diverse influences, offers a unique blend of customs,",
+            "page_number": 9
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "refined_text": "The South of France is a diverse and enchanting region that offers a wide range of activities and experiences for travelers. Whether you're exploring the stunning coastline, immersing yourself in the rich cultural heritage, or indulging in the culinary delights, there is something for everyone to enjoy. From family-friendly adventures to vibrant nightlife, the South of France promises an unforgettable journey filled with memories that will last a lifetime. Use this guide to plan your trip and make the most of everything this beautiful region has to offer. The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing, Planning, and Exploring Introduction Planning a trip to the South of France requires thoughtful preparation to ensure a",
+            "page_number": 13
         },
         {
             "document": "South of France - Restaurants and Hotels.pdf",
             "refined_text": "\u2022 Ibis Budget Nice Californie Lenval (Nice): A budget-friendly hotel offering comfortable rooms and easy access to the beach and city center. The modern amenities and convenient location make it a great choice for budget-conscious travelers. \u2022 Hotel Le Saint Paul (Nice): A charming hotel located in a historic building, offering affordable rates and beautiful views of the Mediterranean. The cozy rooms and friendly service make it a pleasant stay. \u2022 Hotel des Arts (Montpellier): A budget-friendly hotel located in the heart of",
             "page_number": 8
-        },
-        {
-            "document": "South of France - Things to Do.pdf",
-            "refined_text": "\u2022 Cannes, Nice, and Saint-Tropez: Try jet skiing or parasailing for a thrill. \u2022 Toulon: Dive into the underwater world with scuba diving excursions to explore wrecks. \u2022 Cerb\u00e8re-Banyuls: Visit the marine reserve for an unforgettable diving experience. \u2022 Mediterranean Coast: Charter a yacht or join a sailing tour to explore the coastline and nearby islands.",
-            "page_number": 2
         }
     ]
 }
