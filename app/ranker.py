@@ -1,46 +1,26 @@
-from typing import List, Dict, Tuple
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+from sentence_transformers import SentenceTransformer, util
 
-# Load the light-weight embedding model once (good balance of size + performance)
-model = SentenceTransformer("models/minilm")
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
-
-def embed_text(text: str):
-    return model.encode(text, convert_to_tensor=False)
-
-def rank_sections(sections: List[Dict], persona: str, job: str, top_k: int = 5) -> List[Dict]:
+def rank_sections(sections, persona, task, top_k=10):
     """
-    Ranks sections based on similarity to the persona and job.
-
-    Args:
-        sections (List[Dict]): Each section dict contains text, title, page, doc name etc.
-        persona (str): Persona description
-        job (str): Job to be done
-        top_k (int): Number of top sections to return
-
-    Returns:
-        List[Dict]: Top-k relevant sections sorted by score
+    Ranks section blocks based on semantic similarity to the given task.
     """
-    prompt = f"{persona.strip()}. Task: {job.strip()}"
-    job_embedding = embed_text(prompt)
+    query = f"{persona} needs to {task}"
+    query_embedding = model.encode(query, convert_to_tensor=True)
 
     scored_sections = []
-    for section in sections:
-        combined_text = section["text"]
-        section_embedding = embed_text(combined_text)
+    for sec in sections:
+        sec_embedding = model.encode(sec["text"], convert_to_tensor=True)
+        score = util.pytorch_cos_sim(query_embedding, sec_embedding).item()
+        sec["importance_score"] = score
+        scored_sections.append(sec)
 
-        similarity = cosine_similarity([job_embedding], [section_embedding])[0][0]
-        scored_sections.append({
-            **section,
-            "similarity_score": float(similarity)
-        })
+    # Sort by score descending
+    scored_sections.sort(key=lambda x: x["importance_score"], reverse=True)
 
-    top_sections = sorted(scored_sections, key=lambda x: x["similarity_score"], reverse=True)[:top_k]
+    # Assign importance_rank
+    for idx, sec in enumerate(scored_sections[:top_k]):
+        sec["importance_rank"] = idx + 1
 
-    # Add importance_rank
-    for i, sec in enumerate(top_sections, 1):
-        sec["importance_rank"] = i
-
-    return top_sections
+    return scored_sections[:top_k]

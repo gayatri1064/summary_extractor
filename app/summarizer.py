@@ -1,38 +1,29 @@
-from typing import List
+from sentence_transformers import SentenceTransformer, util
 import nltk
-from sklearn.feature_extraction.text import TfidfVectorizer
-import numpy as np
+from nltk.tokenize import sent_tokenize
+import heapq
 
-# Ensure NLTK punkt tokenizer is downloaded
-nltk.download('punkt', quiet=True)
+nltk.download('punkt')
 
-def split_into_sentences(text: str) -> List[str]:
-    return nltk.sent_tokenize(text)
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def summarize_text(text: str, max_sentences: int = 5) -> str:
-    """
-    Extractive summarization using TF-IDF sentence scoring.
+    if not text:
+        return ""
 
-    Args:
-        text (str): Full section text
-        max_sentences (int): Max number of top sentences to return
-
-    Returns:
-        str: Concise refined summary
-    """
-    sentences = split_into_sentences(text)
-
+    sentences = sent_tokenize(text)
     if len(sentences) <= max_sentences:
-        return text  # Already short
+        return " ".join(sentences)
 
-    vectorizer = TfidfVectorizer()
-    tfidf_matrix = vectorizer.fit_transform(sentences)
+    # Compute embeddings
+    sentence_embeddings = model.encode(sentences, convert_to_tensor=True)
 
-    # Score: Sum of TF-IDF values for each sentence
-    scores = tfidf_matrix.sum(axis=1).A1
-    top_indices = np.argsort(scores)[::-1][:max_sentences]
+    # Compute relevance to the document itself
+    doc_embedding = model.encode(text, convert_to_tensor=True)
+    scores = util.pytorch_cos_sim(sentence_embeddings, doc_embedding).squeeze(1)
 
-    # Sort by original order (not score) for coherence
-    top_sentences = [sentences[i] for i in sorted(top_indices)]
+    # Top N sentences by relevance
+    top_indices = heapq.nlargest(max_sentences, range(len(scores)), scores.__getitem__)
+    top_indices.sort()  # preserve order of appearance
 
-    return " ".join(top_sentences)
+    return " ".join([sentences[i] for i in top_indices])
