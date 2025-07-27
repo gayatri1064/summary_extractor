@@ -44,3 +44,4 @@ def rank_sections(sections: List[Dict], persona: str, job: str, top_k: int = 5) 
         sec["importance_rank"] = i
 
     return top_sections
+ 
