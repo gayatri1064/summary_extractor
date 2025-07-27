@@ -1,6 +1,7 @@
 pdfplumber
 transformers
 sentence-transformers
-torch
 scikit-learn
 numpy
+torch
+nltk

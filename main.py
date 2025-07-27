@@ -9,7 +9,7 @@ from app.ranker import rank_sections
 from app.summarizer import summarize_text
 
 DATA_DIR = "data"
-INPUT_FILE = "input.json"
+INPUT_FILE = "data/input.json"
 OUTPUT_FILE = "output.json"
 
 def load_input():

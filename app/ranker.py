@@ -1,43 +1,46 @@
-# ranker.py
+from typing import List, Dict, Tuple
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
-import os
-import torch
-from sentence_transformers import SentenceTransformer, util
+# Load the light-weight embedding model once (good balance of size + performance)
+model = SentenceTransformer("models/minilm")
 
-class SectionRanker:
-    def __init__(self, model_path="models/minilm", device="cpu"):
-        self.device = device
-        self.model = SentenceTransformer(model_path, device=self.device)
 
-    def rank_sections(self, persona: str, job: str, sections: list, top_k=10):
-        """
-        Rank sections by relevance to persona and job using cosine similarity.
+def embed_text(text: str):
+    return model.encode(text, convert_to_tensor=False)
 
-        Parameters:
-        - persona: Persona description string
-        - job: Job-to-be-done string
-        - sections: List of dicts with keys: 'document', 'section_text', 'section_title', 'page_number'
+def rank_sections(sections: List[Dict], persona: str, job: str, top_k: int = 5) -> List[Dict]:
+    """
+    Ranks sections based on similarity to the persona and job.
 
-        Returns:
-        - Ranked list of sections with added key 'importance_rank'
-        """
-        query = f"{persona}. {job}"
-        query_embedding = self.model.encode(query, convert_to_tensor=True)
+    Args:
+        sections (List[Dict]): Each section dict contains text, title, page, doc name etc.
+        persona (str): Persona description
+        job (str): Job to be done
+        top_k (int): Number of top sections to return
 
-        section_texts = [s["section_text"] for s in sections]
-        section_embeddings = self.model.encode(section_texts, convert_to_tensor=True)
+    Returns:
+        List[Dict]: Top-k relevant sections sorted by score
+    """
+    prompt = f"{persona.strip()}. Task: {job.strip()}"
+    job_embedding = embed_text(prompt)
 
-        scores = util.cos_sim(query_embedding, section_embeddings)[0]
-        scores = scores.cpu().tolist()
+    scored_sections = []
+    for section in sections:
+        combined_text = section["text"]
+        section_embedding = embed_text(combined_text)
 
-        # Attach scores and sort
-        for i, score in enumerate(scores):
-            sections[i]["importance_score"] = score
+        similarity = cosine_similarity([job_embedding], [section_embedding])[0][0]
+        scored_sections.append({
+            **section,
+            "similarity_score": float(similarity)
+        })
 
-        # Sort and assign rank
-        sections = sorted(sections, key=lambda x: x["importance_score"], reverse=True)
-        for rank, section in enumerate(sections[:top_k], start=1):
-            section["importance_rank"] = rank
+    top_sections = sorted(scored_sections, key=lambda x: x["similarity_score"], reverse=True)[:top_k]
 
-        return sections[:top_k]
+    # Add importance_rank
+    for i, sec in enumerate(top_sections, 1):
+        sec["importance_rank"] = i
 
+    return top_sections
