@@ -1,44 +1,48 @@
 import pdfplumber
 from typing import List, Dict
-import os
 
-def extract_text_from_pdf(file_path: str, include_layout: bool = True) -> List[Dict]:
+
+def extract_text_by_page(pdf_path: str, include_layout: bool = True) -> List[Dict]:
     """
-    Extracts text line-by-line from the PDF file along with page number and optional layout features.
+    Extracts text from a PDF file page by page.
 
     Args:
-        file_path (str): Path to the PDF file.
-        include_layout (bool): Whether to include font size, x, y etc.
+        pdf_path (str): Path to the PDF file.
+        include_layout (bool): If True, preserve layout by extracting line-wise text;
+                               else extract full text block per page.
 
     Returns:
-        List[Dict]: List of lines with metadata.
+        List[Dict]: Each dict contains 'text', 'page', 'x', 'y', 'fontname', and 'size'
     """
     extracted_lines = []
 
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"{file_path} not found.")
-
-    with pdfplumber.open(file_path) as pdf:
-        for page_num, page in enumerate(pdf.pages, start=1):
-            try:
-                if include_layout:
-                    for obj in page.extract_words(extra_attrs=["size", "fontname", "x0", "top"]):
-                        extracted_lines.append({
-                            "text": obj["text"],
-                            "page": page_num,
-                            "font_size": obj.get("size", 0),
-                            "font_name": obj.get("fontname", ""),
-                            "x": obj.get("x0", 0),
-                            "y": obj.get("top", 0),
-                        })
-                else:
-                    lines = page.extract_text().split('\n') if page.extract_text() else []
-                    for line in lines:
-                        extracted_lines.append({
-                            "text": line,
-                            "page": page_num,
-                        })
-            except Exception as e:
-                print(f"Error processing page {page_num} of {file_path}: {e}")
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_num, page in enumerate(pdf.pages, 1):
+            if include_layout:
+                for char_obj in page.extract_words(
+                    keep_blank_chars=True,
+                    use_text_flow=True,
+                    x_tolerance=3,
+                    y_tolerance=3
+                ):
+                    extracted_lines.append({
+                        "text": char_obj.get("text", "").strip(),
+                        "page": page_num,
+                        "x": char_obj.get("x0", 0),
+                        "y": char_obj.get("top", 0),
+                        "fontname": char_obj.get("fontname", ""),
+                        "size": char_obj.get("size", 0),
+                    })
+            else:
+                text = page.extract_text()
+                if text:
+                    extracted_lines.append({
+                        "text": text.strip(),
+                        "page": page_num,
+                        "x": 0,
+                        "y": 0,
+                        "fontname": "",
+                        "size": 0
+                    })
 
     return extracted_lines

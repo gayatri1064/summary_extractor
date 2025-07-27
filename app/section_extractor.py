@@ -54,9 +54,14 @@ def extract_heading_candidates(lines: List[Dict], debug: bool = False) -> List[D
 
     headings = []
     for line in lines:
-        if is_heading(line, avg_font_size, bold_fonts):
+     if is_heading(line, avg_font_size, bold_fonts):
+        # Defensive check to avoid KeyError
+        if "page" in line and "y" in line:
             headings.append(line)
             if debug:
-                print(f"[HEADING] {line['text']} (page {line['page']})")
+                print(f"[HEADING] {line['text']} (page {line['page']}, y={line['y']})")
+        elif debug:
+            print(f"[SKIPPED - Missing page/y] {line}")
+
 
     return headings

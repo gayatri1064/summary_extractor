@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from collections import defaultdict
 
-from app.pdf_parser import extract_text_from_pdf
+from app.pdf_parser import extract_text_by_page
 from app.section_extractor import extract_heading_candidates
 from app.ranker import rank_sections
 from app.summarizer import summarize_text
@@ -58,7 +58,7 @@ def main():
 
     for doc in documents:
         file_path = os.path.join(DATA_DIR, doc["filename"])
-        lines = extract_text_from_pdf(file_path)
+        lines = extract_text_by_page(file_path, include_layout=True)
         
         # Attach source doc to each line
         for l in lines:
