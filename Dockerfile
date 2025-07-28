@@ -29,6 +29,5 @@ RUN python -m nltk.downloader -d /usr/share/nltk_data punkt
 # Download both sentence transformer models locally into the container
 RUN python download_minilm.py && python download_cross_minilm.py
 
-
 # Run main script when the container starts
 CMD ["python", "main.py"]
