@@ -26,8 +26,8 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Download NLTK tokenizer (punkt) locally into the container
 RUN python -m nltk.downloader -d /usr/share/nltk_data punkt
 
-# Download both sentence transformer models locally into the container
+# Download sentence transformer models locally into the container
 RUN python download_minilm.py && python download_cross_minilm.py
 
-# Run main script when the container starts
+# Set default command to run main.py
 CMD ["python", "main.py"]
