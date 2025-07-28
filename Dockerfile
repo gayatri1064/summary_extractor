@@ -26,6 +26,9 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Download NLTK tokenizer (punkt) locally into the container
 RUN python -m nltk.downloader -d /usr/share/nltk_data punkt
 
+# Create a symlink to ensure punkt_tab path resolves
+RUN ln -s /usr/share/nltk_data/tokenizers/punkt /usr/share/nltk_data/tokenizers/punkt_tab || true
+
 # Download sentence transformer models locally into the container
 RUN python download_minilm.py && python download_cross_minilm.py
 
