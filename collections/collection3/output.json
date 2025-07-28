@@ -7,120 +7,109 @@
         ],
         "persona": "Investment Analyst",
         "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies",
-        "processing_timestamp": "2025-07-28T12:11:18.832912"
+        "processing_timestamp": "2025-07-28T12:52:56.917291"
     },
     "extracted_sections": [
         {
             "document": "Adobe 2024 Annual Report.pdf",
-            "section_title": "Investments",
+            "section_title": "Forward-Looking Statements",
             "importance_rank": 1,
-            "page_number": 18
+            "page_number": 3
         },
         {
             "document": "Adobe 2024 Annual Report.pdf",
-            "section_title": "Item 7A.",
+            "section_title": "Short-Term Investments and Fixed Income Securities",
             "importance_rank": 2,
-            "page_number": 2
+            "page_number": 52
         },
         {
             "document": "Adobe 2024 Annual Report.pdf",
-            "section_title": "Quoted Prices",
+            "section_title": "Liquidity and Capital Resources Considerations",
             "importance_rank": 3,
-            "page_number": 71
-        },
-        {
-            "document": "Adobe 2024 Annual Report.pdf",
-            "section_title": "Quoted Prices",
-            "importance_rank": 4,
-            "page_number": 72
-        },
-        {
-            "document": "Google 2024 Annual Report.pdf",
-            "section_title": "December 31, 2023. ",
-            "importance_rank": 5,
-            "page_number": 41
-        },
-        {
-            "document": "Adobe 2024 Annual Report.pdf",
-            "section_title": "MARKET OVERVIEW",
-            "importance_rank": 6,
-            "page_number": 4
+            "page_number": 49
         },
         {
             "document": "Apple 2023 Annual Report.pdf",
-            "section_title": "Item 7A. ",
-            "importance_rank": 7,
+            "section_title": "Research and Development",
+            "importance_rank": 4,
+            "page_number": 6
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "section_title": "Revenues and Monetization Metrics",
+            "importance_rank": 5,
             "page_number": 29
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "section_title": "Other Income (Expense), Net ",
+            "importance_rank": 6,
+            "page_number": 32
         },
         {
             "document": "Apple 2023 Annual Report.pdf",
             "section_title": "Risk Factors",
-            "importance_rank": 8,
+            "importance_rank": 7,
             "page_number": 8
         },
         {
-            "document": "Apple 2023 Annual Report.pdf",
-            "section_title": "Apple Inc. | 2023 Form 10-K | 4",
-            "importance_rank": 9,
-            "page_number": 7
+            "document": "Google 2024 Annual Report.pdf",
+            "section_title": "We have determined that the governance structures of these entities do not allow us to direct the activities that ",
+            "importance_rank": 8,
+            "page_number": 19
         },
         {
-            "document": "Google 2024 Annual Report.pdf",
-            "section_title": "GOOGL",
-            "importance_rank": 10,
-            "page_number": 1
+            "document": "Apple 2023 Annual Report.pdf",
+            "section_title": "Interest Rate Risk",
+            "importance_rank": 9,
+            "page_number": 29
         }
     ],
     "subsection_analysis": [
         {
             "document": "Adobe 2024 Annual Report.pdf",
-            "refined_text": "From time to time, we make direct investments in privately held companies. We enter these investments with the intent  of securing financial returns as well as for strategic purposes, as they often increase our knowledge of technological  developments in the industry and expand our opportunities to provide Adobe products, services, and solutions.",
-            "page_number": 18
+            "refined_text": "In addition to historical information, this Annual Report on Form 10-K contains \u201cforward-looking statements\u201d within the meaning of applicable securities laws, including statements related to our product development plans and new or enhanced offerings; our business, artificial intelligence and innovation momentum; our strategy, market opportunity and future growth; market trends; current macroeconomic conditions; fluctuations in foreign currency exchange rates; strategic investments; industry positioning; and customer acquisition and retention. In addition, when used in this report, the words \u201cwill,\u201d \u201cexpects,\u201d \u201ccould,\u201d \u201cwould,\u201d \u201cmay,\u201d \u201canticipates,\u201d \u201cintends,\u201d \u201cplans,\u201d \u201cbelieves,\u201d \u201cseeks,\u201d \u201ctargets,\u201d \u201cestimates,\u201d \u201clooks for,\u201d \u201clooks to,\u201d \u201ccontinues\u201d and similar expressions, as well as statements regarding our focus for the future, are generally intended to identify forward-looking statements. Each of the forward-looking statements we make in this report involves risks, uncertainties and assumptions based on information available to us as of the date of this report. Such risks and uncertainties, many of which relate to matters beyond our control, could cause actual results to differ materially and adversely from these",
+            "page_number": 3
         },
         {
             "document": "Adobe 2024 Annual Report.pdf",
-            "refined_text": "Quantitative and Qualitative Disclosures About Market Risk           ................................................................. 51",
-            "page_number": 2
+            "refined_text": "At November 29, 2024, we had debt securities classified as short-term investments of $273 million. Changes in interest rates could adversely affect the market value of these investments. A sensitivity analysis was performed on our short-term investment portfolio as of November 29, 2024, based on an estimate of the hypothetical changes in market value of the portfolio that would result from an immediate parallel shift in the yield curve. A 150 basis point increase in interest rates would lead to a $1 million decrease in the market value of our short-term investments. Conversely, a 150 basis point decrease in interest rates would lead to a $1 million increase in the market value of our short-term investments.",
+            "page_number": 52
         },
         {
             "document": "Adobe 2024 Annual Report.pdf",
-            "refined_text": "in Active Markets for",
-            "page_number": 71
-        },
-        {
-            "document": "Adobe 2024 Annual Report.pdf",
-            "refined_text": "in Active Markets for",
-            "page_number": 72
-        },
-        {
-            "document": "Google 2024 Annual Report.pdf",
-            "refined_text": "41 Available Information Our website is located at  www.abc.xyz , and our investor relations website is located at  www.abc.xyz/investor . Access to our Annual Reports on Form 10-K, Quarterly Reports on Form 10-Q, Current Reports on Form 8-K, and  our Proxy Statements,",
-            "page_number": 41
-        },
-        {
-            "document": "Adobe 2024 Annual Report.pdf",
-            "refined_text": "This overview provides an explanation of our markets and a discussion of strategic opportunities in fiscal 2025 and  beyond for each of our segments. See the section titled \u201cResults of Operations\u201d in Part II, Item 7 titled \u201cManagement\u2019s  Discussion and Analysis of Financial Condition and Results of Operations\u201d and Note 2 of our Notes to Consolidated Financial  Statements of this report for further segment information.",
-            "page_number": 4
+            "refined_text": "Our existing cash, cash equivalents and investment balances may fluctuate during fiscal 2025 due to changes in our planned cash outlay. Cash from operations could also be affected by various risks and uncertainties, including, but not limited to, risks detailed in the section titled \u201cRisk Factors\u201d in Part I, Item 1A of this report. Based on our current business plan and revenue prospects, we believe that our existing cash, cash equivalents and investment balances, our anticipated cash flows from operations and our available credit facility will be sufficient to meet our working capital, operating resource expenditure and capital expenditure requirements for the next twelve months and for the foreseeable future. Our cash equivalent and short-term investment portfolio as of November 29, 2024 consisted of money market funds, corporate debt securities, U.S. Treasury securities, time deposits, U.S. agency securities and asset-backed securities. We use professional investment management firms to manage a large portion of our invested cash.",
+            "page_number": 49
         },
         {
             "document": "Apple 2023 Annual Report.pdf",
-            "refined_text": "Quantitative and Qualitative Disclosures About Market Risk The Company is exposed to economic risk from interest rates and foreign exchange rates. The Company uses various strategies  to manage these risks; however, they may still impact the Company\u2019s consolidated financial statements.",
+            "refined_text": "Because the industries in which the Company competes are characterized by rapid technological advances, the Company\u2019s ability to compete successfully depends heavily upon its ability to ensure a continual and timely flow of competitive products, services and technologies to the marketplace. The Company continues to develop new technologies to enhance existing products and services, and to expand the range of its offerings through research and development (\u201cR&D\u201d), licensing of intellectual property and acquisition of third-party businesses and technology.",
+            "page_number": 6
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "refined_text": "We generate revenues by delivering relevant, cost-effective online advertising; cloud-based solutions that provide enterprise customers of all sizes with infrastructure and platform services as well as communication and collaboration tools; sales of other products and services, such as fees received for subscription-based products, apps and in-app purchases, and devices. For additional information on how we recognize revenue, see Note 1 of the Notes to Consolidated Financial Statements included in Part II, Item 8 in our Annual Report on Form 10-K for the fiscal year ended December 31, 2023. In addition to the long-term trends and their financial effect on our business discussed in \"Trends in Our Business and Financial Effect\" in Part II, Item 7 of our Annual Report on Form 10-K for the fiscal year ended December 31, 2023, fluctuations in our revenues have been and may continue to be affected by a combination of",
             "page_number": 29
         },
         {
+            "document": "Google 2024 Annual Report.pdf",
+            "refined_text": "OI&E, net primarily consists of interest income (expense), the effect of foreign currency exchange gains (losses), net gains (losses) and impairment on our marketable and non-marketable securities, performance fees, and income (loss) and impairment from our equity method investments. For additional information, including how we account for our investments and factors that can drive fluctuations in the value of our investments, see Note 1 of the Notes to Consolidated Financial Statements included in Part II, Item 8 and Item 7A, \u201cQuantitative and Qualitative Disclosures About Market Risk\u201d in our Annual Report on Form 10- K for the fiscal year ended December 31, 2023 as well as Note 3 of the Notes to Consolidated Financial Statements included in Item 1 of this Quarterly Report on Form 10-Q.",
+            "page_number": 32
+        },
+        {
             "document": "Apple 2023 Annual Report.pdf",
-            "refined_text": "The Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of  factors, whether currently known or unknown, including those described below. When any one or more of these risks materialize  from time to time, the Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially  and adversely affected. Because of the following factors, as well as other factors affecting the Company\u2019s results of operations and financial condition,  past financial performance should not be considered to be a reliable indicator of future performance, and investors should not  use historical trends to anticipate results or trends in future periods. This discussion of risk factors contains forward-looking  statements. This section should be read in conjunction with Part II, Item 7, \u201cManagement\u2019s Discussion and Analysis of Financial Condition  and Results of Operations\u201d and the consolidated financial statements and accompanying notes in Part II, Item 8, \u201cFinancial",
+            "refined_text": "The Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of factors, whether currently known or unknown, including those described below. When any one or more of these risks materialize from time to time, the Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially and adversely affected. Because of the following factors, as well as other factors affecting the Company\u2019s results of operations and financial condition, past financial performance should not be considered to be a reliable indicator of future performance, and investors should not use historical trends to anticipate results or trends in future periods. This discussion of risk factors contains forward-looking statements. This section should be read in conjunction with Part II, Item 7, \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations\u201d and the consolidated financial statements and accompanying notes in Part II, Item 8, \u201cFinancial",
             "page_number": 8
         },
         {
-            "document": "Apple 2023 Annual Report.pdf",
-            "refined_text": "Item 1A. Risk Factors The Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of  factors, whether currently known or unknown, including those described below. When any one or more of these risks materialize  from time to time, the Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially  and adversely affected. Because of the following factors, as well as other factors affecting the Company\u2019s results of operations and financial condition,  past financial performance should not be considered to be a reliable indicator of future performance, and investors should not  use historical trends to anticipate results or trends in future periods. This discussion of risk factors contains forward-looking  statements.",
-            "page_number": 7
+            "document": "Google 2024 Annual Report.pdf",
+            "refined_text": "would significantly affect their economic performance. Therefore, we are not the primary beneficiary, and the results of operations and financial position of these VIEs are not included in our consolidated financial statements. We account for these investments primarily as non-marketable equity securities or equity method investments.",
+            "page_number": 19
         },
         {
-            "document": "Google 2024 Annual Report.pdf",
-            "refined_text": "Nasdaq Stock Market LLC",
-            "page_number": 1
+            "document": "Apple 2023 Annual Report.pdf",
+            "refined_text": "The Company is primarily exposed to fluctuations in U.S. interest rates and their impact on the Company\u2019s investment portfolio and term debt. Increases in interest rates will negatively affect the fair value of the Company\u2019s investment portfolio and increase the interest expense on the Company\u2019s term debt. To protect against interest rate risk, the Company may use derivative instruments, offset interest rate\u2013sensitive assets and liabilities, or control duration of the investment and term debt portfolios. The following table sets forth potential impacts on the Company\u2019s investment portfolio and term debt, including the effects of any associated derivatives, that would result from a hypothetical increase in relevant interest rates as of September 30, 2023 and September 24, 2022 (dollars in millions):",
+            "page_number": 29
         }
     ]
 }

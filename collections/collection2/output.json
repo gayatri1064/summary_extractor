@@ -8,120 +8,120 @@
         ],
         "persona": "PhD Researcher in Computational Biology",
         "job_to_be_done": "Prepare a comprehensive literature review focusing on methodologies, datasets, and performance benchmarks",
-        "processing_timestamp": "2025-07-28T12:10:59.989318"
+        "processing_timestamp": "2025-07-28T12:52:29.129048"
     },
     "extracted_sections": [
         {
-            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
-            "section_title": "[15] Wu, Z.",
+            "document": "Recent Developments in GNN for Drug Discovery.pdf",
+            "section_title": "Benchmark Databases",
             "importance_rank": 1,
-            "page_number": 17
+            "page_number": 14
         },
         {
             "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "section_title": "[21] Wu, Z.",
+            "section_title": "Molecular interactions databases record relationships among different molecules in various formats and are",
             "importance_rank": 2,
-            "page_number": 24
+            "page_number": 19
+        },
+        {
+            "document": "Recent Developments in GNN for Drug Discovery.pdf",
+            "section_title": "Introduction",
+            "importance_rank": 3,
+            "page_number": 1
+        },
+        {
+            "document": "A Graph in Graph Learning Framework for Drug Target Interaction Prediction.pdf",
+            "section_title": "Y. Song and Y. Gao",
+            "importance_rank": 4,
+            "page_number": 12
+        },
+        {
+            "document": "A Graph in Graph Learning Framework for Drug Target Interaction Prediction.pdf",
+            "section_title": "The structures of the targets are represented by their contact",
+            "importance_rank": 5,
+            "page_number": 2
         },
         {
             "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
-            "section_title": "Figure 4:",
-            "importance_rank": 3,
+            "section_title": "Table",
+            "importance_rank": 6,
             "page_number": 8
         },
         {
-            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
-            "section_title": "[59] Wu, Z.",
-            "importance_rank": 4,
-            "page_number": 20
-        },
-        {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "section_title": "[124] Tang, J.",
-            "importance_rank": 5,
-            "page_number": 31
-        },
-        {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "section_title": " MUV",
-            "importance_rank": 6,
-            "page_number": 17
-        },
-        {
             "document": "DrugMCTS.pdf",
-            "section_title": "However,",
+            "section_title": "As interest grows in applying general-purpose large",
             "importance_rank": 7,
             "page_number": 1
         },
         {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "section_title": "Benchmark Databases",
+            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
+            "section_title": "Pre-train and No pre-train",
             "importance_rank": 8,
-            "page_number": 14
+            "page_number": 11
         },
         {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "section_title": "Molecule Generation",
+            "document": "DrugMCTS.pdf",
+            "section_title": " Deep learn-",
             "importance_rank": 9,
-            "page_number": 2
+            "page_number": 5
         },
         {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "section_title": "[31] Menden, M. P.",
+            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
+            "section_title": " Journal of chemical",
             "importance_rank": 10,
-            "page_number": 25
+            "page_number": 17
         }
     ],
     "subsection_analysis": [
         {
-            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
-            "refined_text": " et al. MoleculeNet: A benchmark for molecular machine learning.",
-            "page_number": 17
-        },
-        {
             "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "refined_text": " et al. MoleculeNet: a benchmark for molecular machine learning.",
-            "page_number": 24
-        },
-        {
-            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
-            "refined_text": " MPG outperforms other methods in the antibacterial properties prediction open task hosted by MIT J-Clinic. Inspired by the impressive performance on molecular properties prediction, we took part in an open task released by MIT J-Clinic recently ( https://www.aicures.mit.edu/tasks ), aiming at predicting antibacterial properties of molecules on  Pseudomonas aeruginosa  datasets, for the treat- ment of secondary infections in patients with COVID-19. Our MPG currently ranks the \ufb01rst with",
-            "page_number": 8
-        },
-        {
-            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
-            "refined_text": " et al. Moleculenet: a benchmark for molecular machine learning. Chemical science  9 , 513\u2013530 (2018). & Masoudi-Nejad, A. Drug\u2013target interaction prediction via chemogenomic space: learning-based methods. Expert opinion on drug metabolism & toxicology  10",
-            "page_number": 20
-        },
-        {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "refined_text": " et al. Making sense of large-scale kinase inhibitor bioactivity data sets: a comparative and integrative analysis. Journal of Chemical Information and Modeling  54 , 735\u2013743 (2014).",
-            "page_number": 31
-        },
-        {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "refined_text": " is a filtered subset of PubChem BioAssay, designed to validate virtual screening techniques and includes 17 benchmark tasks.",
-            "page_number": 17
-        },
-        {
-            "document": "DrugMCTS.pdf",
-            "refined_text": "when confronted with problems that lie beyond their pre-training knowledge or inherent reasoning abili- ties, such as predicting novel drug-target interactions, their performance may fall short of expectations [2]. As interest grows in applying general-purpose large models to scientific domains, various approaches have been proposed to address the aforementioned limitations. Among them, fine-tuning on domain- specific datasets has become a widely adopted",
-            "page_number": 1
-        },
-        {
-            "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "refined_text": "In addition to newly developed methodologies, benchmark datasets play a vital role in advancing the field of computational drug discovery. High-quality data is essential for all the tasks ranging from molecular design 14 Table 1: GNN-based models discussed in this review and their characteristics. Each row includes the name of the approach, the main model architecture, the prediction task and the datasets used. The approaches are grouped into different bucket based on their tasks. Methods using pre-training are labeled with  \u266f and methods using few-shot learning are labeled",
+            "refined_text": "In addition to newly developed methodologies, benchmark datasets play a vital role in advancing the field of computational drug discovery. High-quality data is essential for all the tasks ranging from molecular design 14 Table 1: GNN-based models discussed in this review and their characteristics. Each row includes the name of the approach, the main model architecture, the prediction task and the datasets used. The approaches are grouped into different bucket based on their tasks. Methods using pre-training are labeled with \u266f and methods using few-shot learning are labeled",
             "page_number": 14
         },
         {
             "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "refined_text": "An earlier step in developing a drug for a certain disease usually involves the search of enormous amount of molecules to create a small subset of candidates for further laboratory testing. To reduce experimental costs and to produce drug candidates more efficiently, many computational approaches have been devel- oped to generate novel molecules [ 6 ,  7 ,  8 ,",
-            "page_number": 2
+            "refined_text": "fundamental in the study of molecular biology, computational chemistry, and drug discovery. Researchers use these datasets to elucidate biochemical pathways, predict binding affinities, evaluate selectivity, and simulate off-target effects. We include datasets that capture a range of molecular interactions, grouped into two categories: protein\u2013ligand binding and drug\u2013drug interactions.",
+            "page_number": 19
         },
         {
             "document": "Recent Developments in GNN for Drug Discovery.pdf",
-            "refined_text": " et al. Community assessment to advance computational prediction of cancer drug combinations in a pharmacogenomic screen.",
-            "page_number": 25
+            "refined_text": "It is well known that traditional drug discovery is costly, time-consuming, and with high failure rates [ 1 ]. To streamline the process of drug discovery and mitigate resource-intensive laboratory work, significant research has been dedicated to the development of computational methods. Existing literature provides some comprehensive reviews on deep learning approaches in drug discovery [ 2 , 3 ,",
+            "page_number": 1
+        },
+        {
+            "document": "A Graph in Graph Learning Framework for Drug Target Interaction Prediction.pdf",
+            "refined_text": "In addition, the comprehensive dataset we constructed for this study further serves as a valuable resource for advancing research in this domain. For future work, we aim to extend the GiG framework by incorporating multi-omic data, such as gene expression, proteomics, and metabolomics, to enrich the biological context and further enhance predictive power. Additionally, we plan to integrate 3D graph representations for both drug molecules and target structures, leveraging spatial and structural information to",
+            "page_number": 12
+        },
+        {
+            "document": "A Graph in Graph Learning Framework for Drug Target Interaction Prediction.pdf",
+            "refined_text": "Our dataset is unique in that it combines three types of data\u2014chemical structures, protein sequences, and interaction networks\u2014into a single dataset. To the best of our knowledge, it is the first benchmark with such combination in the domain of drug discovery. A summary of the statistics of the dataset is given in Table 1.",
+            "page_number": 2
+        },
+        {
+            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
+            "refined_text": "1 summarizes the results that compare MPG with previous self-supervised methods and supervised methods on molecular properties prediction. It indicates that our MPG achieves state- of-the-art performance on 8 out of 9 data sets. Compared to previous best methods\u2013GRVOVER, the overall improvement is 13.9% (0.9% on classi\ufb01cation tasks and 26.9% on regression tasks). In particular, MPG achieved larger gains on small data sets, such as ClinTox, BACE, FreeSolv, and ESOL, con\ufb01rming that our MPG can boost the performance on the tasks with very few la- beled data. These superior performances could be attributed to the self-supervised strategy we",
+            "page_number": 8
+        },
+        {
+            "document": "DrugMCTS.pdf",
+            "refined_text": "models to scientific domains, various approaches have been proposed to address the aforementioned limitations. Among them, fine-tuning on domain- specific datasets has become a widely adopted paradigm [3] [4]. However, this approach comes with several notable drawbacks. First, fine-tuning de- mands substantial computational resources, and most current methods are tailored to specific domains.",
+            "page_number": 1
+        },
+        {
+            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
+            "refined_text": "To verify the necessity of pre-training in MPG, we compared the performances of pre-trained and non-pre-trained MolGNet on molecular properties prediction tasks, both of which have the identical hyper-parameter setting. Table 3 shows that, compared with the pre-trained MolGNet, the MolGNet without pre-training demonstrates signi\ufb01cant decreases in classi\ufb01cation AUC-ROC score, and increases in RMSE of regression tasks, which con\ufb01rmed that our self-supervised strate- gies could provide a favorable initialization for the model and improve the performance of down- stream tasks. Notably, the small datasets, including BBBP, SIDER, ClinTox, BACE, and FreeSolv, give a greater performance gain through pre-training, demonstrating the effectiveness and gener-",
+            "page_number": 11
+        },
+        {
+            "document": "DrugMCTS.pdf",
+            "refined_text": "ing models have emerged as a promising solution due to their superior computational efficiency [39]. How- ever, their performance is highly dependent on the training dataset. When predicting samples that devi- ate significantly from the training data, the accuracy of these models can drop by over 30%, limiting their applicability across diverse scenarios.",
+            "page_number": 5
+        },
+        {
+            "document": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
+            "refined_text": "information and modeling 59 , 3370\u20133388 (2019). [10] Xue, L. & Bajorath, J. Molecular descriptors in chemoinformatics, computational combinatorial chem- istry, and virtual screening. Combinatorial chemistry & high throughput screening 3 , 363\u2013372 (2000).",
+            "page_number": 17
         }
     ]
 }

@@ -11,120 +11,120 @@
         ],
         "persona": "Travel Planner",
         "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
-        "processing_timestamp": "2025-07-28T12:10:46.916986"
+        "processing_timestamp": "2025-07-28T12:52:14.176003"
     },
     "extracted_sections": [
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Snacks:",
+            "section_title": "Additional Tips:",
             "importance_rank": 1,
-            "page_number": 6
+            "page_number": 8
         },
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Additional Tips:",
+            "section_title": "Planning a trip to the South of France requires thoughtful preparation to ensure a ",
             "importance_rank": 2,
-            "page_number": 8
+            "page_number": 1
         },
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Wear Bulky Items:",
+            "section_title": "Conclusion ",
             "importance_rank": 3,
-            "page_number": 8
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Camera:",
-            "importance_rank": 4,
-            "page_number": 4
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Portable Laundry Kit:",
-            "importance_rank": 5,
-            "page_number": 2
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Makeup:",
-            "importance_rank": 6,
-            "page_number": 4
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Additional Tips:",
-            "importance_rank": 7,
-            "page_number": 8
+            "page_number": 9
         },
         {
             "document": "South of France - Things to Do.pdf",
-            "section_title": "P\u00e9rigord",
+            "section_title": "Introduction ",
+            "importance_rank": 4,
+            "page_number": 1
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "section_title": "Conclusion ",
+            "importance_rank": 5,
+            "page_number": 14
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "section_title": "Cultural Highlights ",
+            "importance_rank": 6,
+            "page_number": 7
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "section_title": "Christmas Traditions ",
+            "importance_rank": 7,
+            "page_number": 4
+        },
+        {
+            "document": "South of France - History.pdf",
+            "section_title": "Conclusion ",
             "importance_rank": 8,
-            "page_number": 5
+            "page_number": 12
         },
         {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Day Bag:",
+            "document": "South of France - Cities.pdf",
+            "section_title": "Cultural Highlights ",
             "importance_rank": 9,
-            "page_number": 7
+            "page_number": 12
         },
         {
-            "document": "South of France - Tips and Tricks.pdf",
-            "section_title": "Additional Tips:",
+            "document": "South of France - Cities.pdf",
+            "section_title": "History ",
             "importance_rank": 10,
-            "page_number": 7
+            "page_number": 8
         }
     ],
     "subsection_analysis": [
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Bring a variety of snacks for travel and outings. \u2022   Toys and Entertainment:  Favorite toys, books, or games. Consider a tablet with pre- downloaded content. \u2022",
-            "page_number": 6
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Plan your wine tour route in advance and consider hiring a driver or  joining a guided tour to avoid drinking and driving. Tips and Tricks for Packing  \u2022   Check the Weather:  Check the forecast before packing to ensure appropriate clothing. \u2022",
+            "refined_text": "Pack a small travel umbrella, a reusable shopping bag, and a portable phone charger. Consider using a luggage scale to avoid overweight baggage fees. Conclusion Packing for a trip to the South of France involves considering the season, planned activities, and the needs of both adults and children. By following this comprehensive guide and incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the",
             "page_number": 8
         },
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Wear bulky items like coats or boots during travel to save suitcase  space. \u2022   Pack a Day Bag:  Bring a small day bag for daily excursions. \u2022   Leave Room for Souvenirs:  Leave extra space or bring a foldable bag for souvenirs.",
-            "page_number": 8
+            "refined_text": "comfortable and enjoyable experience. This guide covers everything from packing essentials to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with kids, or in a group, this guide will help you make the most of your trip. General Packing Tips and Tricks \u2022 Layering: The weather can vary, so pack layers to stay comfortable in di\ufb00erent",
+            "page_number": 1
         },
         {
             "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Capture memories with a camera, extra batteries, and memory cards. \u2022   Books and Entertainment:  A book, e-reader, or tablet for entertainment during  travel. \u2022   Additional Tips:  Download maps and travel guides to your devices for o\ufb04ine use.",
-            "page_number": 4
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " A small laundry kit with detergent and a travel clothesline can  be handy for longer trips. \u2022",
-            "page_number": 2
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Pack essentials in a travel-sized makeup bag. \u2022",
-            "page_number": 4
-        },
-        {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Pack a small travel umbrella, a reusable shopping bag, and a  portable phone charger. Consider using a luggage scale to avoid overweight baggage  fees. Conclusion  Packing for a trip to the South of France involves considering the season, planned activities,  and the needs of both adults and children. By following this comprehensive guide and  incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and  enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the",
-            "page_number": 8
+            "refined_text": "Packing for a trip to the South of France involves considering the season, planned activities, and the needs of both adults and children. By following this comprehensive guide and incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the most of your travel experience. A Comprehensive Guide to Traditions and Culture in the South of France Introduction The South of France, with its picturesque landscapes, charming villages, and vibrant cities, is not only a feast for the eyes but also a treasure trove of cultural traditions and heritage.",
+            "page_number": 9
         },
         {
             "document": "South of France - Things to Do.pdf",
-            "refined_text": ": Join a tru\ufb04e hunting tour followed by a cooking class. \u2022",
-            "page_number": 5
+            "refined_text": "The South of France, with its stunning coastline, picturesque villages, and vibrant cities, o\ufb00ers a wealth of activities and experiences for travelers. Whether you're seeking adventure, relaxation, or cultural enrichment, this region has something for everyone. This guide will take you through a variety of activities and must-see attractions to help you plan an unforgettable trip. Coastal Adventures The South of France is renowned for its beautiful coastline along the Mediterranean Sea. Here are some activities to enjoy by the sea:",
+            "page_number": 1
         },
         {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " A small, secure day bag for carrying essentials like water, snacks, and a  camera. \u2022",
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "refined_text": "The South of France o\ufb00ers a wide range of dining and accommodation options to suit every budget and preference. Whether you're looking for budget-friendly eateries, family-friendly spots, upscale dining, or luxurious experiences, this guide will help you find the perfect places to eat and stay during your trip. From the vibrant cities of Nice and Marseille to the charming villages of Provence, the South of France promises an unforgettable travel experience. Ultimate Guide to Activities and Things to Do in the South of France Introduction The South of France, with its stunning coastline, picturesque villages, and vibrant cities, o\ufb00ers",
+            "page_number": 14
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "refined_text": "Avignon is famous for its annual Festival d'Avignon, held in July, which is one of the most important contemporary performing arts events in the world. The festival features theater, dance, and music performances in various historic venues throughout the city. Avignon's cuisine is also notable, with local specialties such as tru\ufb04es, olive oil, and wines from the surrounding vineyards. Aix-en-Provence: A City of Art and Culture History Aix-en-Provence, founded by the Romans in 123 BC, is known for its elegant architecture,",
             "page_number": 7
         },
         {
-            "document": "South of France - Tips and Tricks.pdf",
-            "refined_text": " Bring a favorite stu\ufb00ed animal or comfort item to help kids feel at  home. Consider packing a travel potty for young children.",
-            "page_number": 7
+            "document": "South of France - Traditions and Culture.pdf",
+            "refined_text": "Christmas in Provence is marked by unique traditions that reflect the region's cultural heritage. One of the most distinctive customs is the \"13 Desserts,\" a feast of thirteen di\ufb00erent sweets served after Midnight Mass on Christmas Eve. Another tradition is the \"santon\" figurines, which are handcrafted clay figures used to create nativity scenes. Santon fairs, such as the one in Marseille, o\ufb00er a wide variety of these charming figures. Music and Dance Proven\u00e7al Folk Music Proven\u00e7al folk music is an essential part of the region's cultural identity.",
+            "page_number": 4
+        },
+        {
+            "document": "South of France - History.pdf",
+            "refined_text": "The South of France o\ufb00ers a rich tapestry of history, culture, and architecture that is sure to captivate any traveler. From the ancient Roman ruins of N\u00eemes and Arles to the medieval fortresses of Carcassonne and Avignon, each city and town has its own unique story to tell. Whether you're exploring the vibrant streets of Marseille, the elegant boulevards of Aix-en- Provence, or the charming squares of Montpellier, you'll find a wealth of historical treasures waiting to be discovered. Use this guide to plan your journey through the South of France and immerse yourself in the fascinating history of this beautiful region. Comprehensive Guide to Restaurants and Hotels in the South of France Introduction",
+            "page_number": 12
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "refined_text": "Arles is known for its vibrant arts scene, with numerous galleries, theaters, and festivals. The city hosts the Rencontres d'Arles, an international photography festival that attracts artists and photographers from around the world. Arles' cuisine is also notable, with local specialties such as bull meat stew and wines from the surrounding vineyards. Carcassonne: A Medieval Fortress History Carcassonne is a fortified city in the Languedoc region, known for its well-preserved medieval architecture. The city's history dates back to the Roman period, but it is best known for its",
+            "page_number": 12
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "refined_text": "Aix-en-Provence, founded by the Romans in 123 BC, is known for its elegant architecture, vibrant cultural scene, and association with the painter Paul C\u00e9zanne. The city's rich history is reflected in its beautiful buildings and lively atmosphere. Aix-en-Provence has been a center of art and learning for centuries, attracting artists, writers, and scholars.",
+            "page_number": 8
         }
     ]
 }

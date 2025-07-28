@@ -4,12 +4,15 @@ from datetime import datetime
 from collections import defaultdict
 
 from app.pdf_parser import safe_extract_text_by_page as extract_text_by_page
-
 from app.section_extractor import extract_heading_candidates
 from app.ranker import rank_sections
 from app.summarizer import summarize_text
-from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('all-MiniLM-L6-v2')
+
+from sentence_transformers import SentenceTransformer, CrossEncoder
+
+# Load bi-encoder and cross-encoder models
+bi_encoder = SentenceTransformer('all-MiniLM-L6-v2')
+cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 
 COLLECTIONS_DIR = "collections"
 
@@ -78,7 +81,7 @@ def process_collection(collection_path):
         all_headings.extend(headings)
 
     section_candidates = group_content_by_heading(all_lines, all_headings)
-    ranked_sections = rank_sections(section_candidates, persona, job, model)
+    ranked_sections = rank_sections(section_candidates, persona, job, bi_encoder, cross_encoder)
 
     subsection_analysis = []
     extracted_sections = []
