@@ -1,0 +1,31 @@
+{
+    "challenge_info": {
+        "challenge_id": "round_1b_001",
+        "test_case_name": "academic_research",
+        "description": "Graph Neural Networks for Drug Discovery"
+    },
+    "documents": [
+        {
+            "filename": "A Graph in Graph Learning Framework for Drug Target Interaction Prediction.pdf",
+            "title": "A Graph-in-Graph Learning Framework for Drug-Target Interaction Prediction"
+        },
+        {
+            "filename": "DrugMCTS.pdf",
+            "title": "DrugMCTS: Monte Carlo Tree Search for Molecular Graph Generation"
+        },
+        {
+            "filename": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery.pdf",
+            "title": "Learn Molecular Representations from Large Unlabeled Molecules for Drug Discovery"
+        },
+        {
+            "filename": "Recent Developments in GNN for Drug Discovery.pdf",
+            "title": "Recent Developments in GNN for Drug Discovery.pdf"
+        }
+    ],
+    "persona": {
+        "role": "PhD Researcher in Computational Biology"
+    },
+    "job_to_be_done": {
+        "task": "Prepare a comprehensive literature review focusing on methodologies, datasets, and performance benchmarks"
+    }
+}

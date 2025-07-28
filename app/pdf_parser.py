@@ -1,45 +1,47 @@
-# app/pdf_parser.py
+import fitz  # PyMuPDF
 import pdfplumber
-from typing import List, Dict
+import logging
 
+def safe_extract_text_by_page(file_path, include_layout=True):
+    try:
+        # Try PyMuPDF
+        return extract_text_pymupdf(file_path)
+    except Exception as e:
+        logging.warning(f"[!] PyMuPDF failed for {file_path}: {e}")
+        logging.info("⏪ Falling back to pdfplumber...")
+        return extract_text_pdfplumber(file_path)
 
-def extract_text_by_page(pdf_path: str, include_layout: bool = False) -> List[Dict]:
-    """
-    Extracts text from a PDF file page by page, preserving layout if needed.
+def extract_text_pymupdf(file_path):
+    lines = []
+    doc = fitz.open(file_path)
 
-    Args:
-        pdf_path (str): Path to the PDF file.
-        include_layout (bool): If True, extract line-wise with font/position metadata.
+    for page_num, page in enumerate(doc, start=1):
+        blocks = page.get_text("dict")["blocks"]
+        for b in blocks:
+            for l in b.get("lines", []):
+                for span in l.get("spans", []):
+                    lines.append({
+                        "text": span["text"],
+                        "x": span["bbox"][0],
+                        "y": span["bbox"][1],
+                        "font": span.get("font", ""),
+                        "size": span.get("size", 0),
+                        "page": page_num
+                    })
+    return lines
 
-    Returns:
-        List[Dict]: List of {'text': ..., 'page': ..., 'font_size': ..., 'x': ..., 'y': ...}
-    """
-    extracted_lines = []
-
-    with pdfplumber.open(pdf_path) as pdf:
-        for page_num, page in enumerate(pdf.pages, 1):
-            if include_layout:
-                # Extract each line's position and style
-                lines = page.extract_words(use_text_flow=True, keep_blank_chars=True)
-                for word in lines:
-                    text = word.get("text", "").strip()
-                    if text:
-                        extracted_lines.append({
-                            "text": text,
-                            "page": page_num,
-                            "x": word.get("x0", 0),
-                            "y": word.get("top", 0),
-                            "font_size": word.get("size", 0)
-                        })
-            else:
-                text = page.extract_text()
-                if text:
-                    for line in text.split('\n'):
-                        cleaned = line.strip()
-                        if cleaned:
-                            extracted_lines.append({
-                                "text": cleaned,
-                                "page": page_num
-                            })
-
-    return extracted_lines
+def extract_text_pdfplumber(file_path):
+    lines = []
+    with pdfplumber.open(file_path) as pdf:
+        for page_num, page in enumerate(pdf.pages, start=1):
+            words = page.extract_words(use_text_flow=True, keep_blank_chars=False)
+            for word in words:
+                lines.append({
+                    "text": word["text"],
+                    "x": float(word["x0"]),
+                    "y": float(word["top"]),
+                    "font": "",  # pdfplumber doesn't expose font easily
+                    "size": 0,   # not available
+                    "page": page_num
+                })
+    return lines

@@ -1,0 +1,35 @@
+{
+    "challenge_info": {
+        "challenge_id": "round_1b_003",
+        "test_case_name": "educational_content",
+        "description": "Organic Chemistry - Reaction Kinetics"
+    },
+    "documents": [
+        {
+            "filename": "Catalysts - Chemistry LibreTexts.pdf",
+            "title": "Catalysts"
+        },
+        {
+            "filename": "Comparison and Competition Between SN1, SN2, E1 and E2 - Chemistry LibreTexts.pdf",
+            "title": "Comparison and Competition of SN1/SN2 and E1/E2"
+        },
+        {
+            "filename": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "title": "Effects of Temperature, Concentration, Catalysts on Reaction Rates"
+        },
+        {
+            "filename": "Rate Laws - Chemistry LibreTexts.pdf",
+            "title": "Rate Laws"
+        },
+        {
+            "filename": "The Arrhenius Law - Activation Energies - Chemistry LibreTexts.pdf",
+            "title": "The Arrhenius Law and Activation Energy"
+        }
+    ],
+    "persona": {
+        "role": "Undergraduate Chemistry Student"
+    },
+    "job_to_be_done": {
+        "task": "Identify key concepts and mechanisms for exam preparation on reaction kinetics"
+    }
+}

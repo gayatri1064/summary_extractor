@@ -1,0 +1,126 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Adobe 2024 Annual Report.pdf",
+            "Apple 2023 Annual Report.pdf",
+            "Google 2024 Annual Report.pdf"
+        ],
+        "persona": "Investment Analyst",
+        "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies",
+        "processing_timestamp": "2025-07-28T07:45:21.799604"
+    },
+    "extracted_sections": [
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "section_title": "Investments",
+            "importance_rank": 1,
+            "page_number": 18
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "section_title": "Item 7A.",
+            "importance_rank": 2,
+            "page_number": 2
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "section_title": "Quoted Prices",
+            "importance_rank": 3,
+            "page_number": 71
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "section_title": "Quoted Prices",
+            "importance_rank": 4,
+            "page_number": 72
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "section_title": "December 31, 2023. ",
+            "importance_rank": 5,
+            "page_number": 41
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "section_title": "MARKET OVERVIEW",
+            "importance_rank": 6,
+            "page_number": 4
+        },
+        {
+            "document": "Apple 2023 Annual Report.pdf",
+            "section_title": "Item 7A. ",
+            "importance_rank": 7,
+            "page_number": 29
+        },
+        {
+            "document": "Apple 2023 Annual Report.pdf",
+            "section_title": "Risk Factors",
+            "importance_rank": 8,
+            "page_number": 8
+        },
+        {
+            "document": "Apple 2023 Annual Report.pdf",
+            "section_title": "Apple Inc. | 2023 Form 10-K | 4",
+            "importance_rank": 9,
+            "page_number": 7
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "section_title": "GOOGL",
+            "importance_rank": 10,
+            "page_number": 1
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "refined_text": "From time to time, we make direct investments in privately held companies. We enter these investments with the intent  of securing financial returns as well as for strategic purposes, as they often increase our knowledge of technological  developments in the industry and expand our opportunities to provide Adobe products, services, and solutions.",
+            "page_number": 18
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "refined_text": "Quantitative and Qualitative Disclosures About Market Risk           ................................................................. 51",
+            "page_number": 2
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "refined_text": "in Active Markets for",
+            "page_number": 71
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "refined_text": "in Active Markets for",
+            "page_number": 72
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "refined_text": "41 Available Information Our website is located at  www.abc.xyz , and our investor relations website is located at  www.abc.xyz/investor . Access to our Annual Reports on Form 10-K, Quarterly Reports on Form 10-Q, Current Reports on Form 8-K, and  our Proxy Statements,",
+            "page_number": 41
+        },
+        {
+            "document": "Adobe 2024 Annual Report.pdf",
+            "refined_text": "This overview provides an explanation of our markets and a discussion of strategic opportunities in fiscal 2025 and  beyond for each of our segments. See the section titled \u201cResults of Operations\u201d in Part II, Item 7 titled \u201cManagement\u2019s  Discussion and Analysis of Financial Condition and Results of Operations\u201d and Note 2 of our Notes to Consolidated Financial  Statements of this report for further segment information.",
+            "page_number": 4
+        },
+        {
+            "document": "Apple 2023 Annual Report.pdf",
+            "refined_text": "Quantitative and Qualitative Disclosures About Market Risk The Company is exposed to economic risk from interest rates and foreign exchange rates. The Company uses various strategies  to manage these risks; however, they may still impact the Company\u2019s consolidated financial statements.",
+            "page_number": 29
+        },
+        {
+            "document": "Apple 2023 Annual Report.pdf",
+            "refined_text": "The Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of  factors, whether currently known or unknown, including those described below. When any one or more of these risks materialize  from time to time, the Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially  and adversely affected. Because of the following factors, as well as other factors affecting the Company\u2019s results of operations and financial condition,  past financial performance should not be considered to be a reliable indicator of future performance, and investors should not  use historical trends to anticipate results or trends in future periods. This discussion of risk factors contains forward-looking  statements. This section should be read in conjunction with Part II, Item 7, \u201cManagement\u2019s Discussion and Analysis of Financial Condition  and Results of Operations\u201d and the consolidated financial statements and accompanying notes in Part II, Item 8, \u201cFinancial",
+            "page_number": 8
+        },
+        {
+            "document": "Apple 2023 Annual Report.pdf",
+            "refined_text": "Item 1A. Risk Factors The Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of  factors, whether currently known or unknown, including those described below. When any one or more of these risks materialize  from time to time, the Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially  and adversely affected. Because of the following factors, as well as other factors affecting the Company\u2019s results of operations and financial condition,  past financial performance should not be considered to be a reliable indicator of future performance, and investors should not  use historical trends to anticipate results or trends in future periods. This discussion of risk factors contains forward-looking  statements.",
+            "page_number": 7
+        },
+        {
+            "document": "Google 2024 Annual Report.pdf",
+            "refined_text": "Nasdaq Stock Market LLC",
+            "page_number": 1
+        }
+    ]
+}

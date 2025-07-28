@@ -1,0 +1,27 @@
+{
+    "challenge_info": {
+        "challenge_id": "round_1b_002",
+        "test_case_name": "business_analysis",
+        "description": "Comparison of Tech Companies"
+    },
+    "documents": [
+        {
+            "filename": "Adobe 2024 Annual Report.pdf",
+            "title": "Adobe 2024 Annual Report"
+        },
+        {
+            "filename": "Apple 2023 Annual Report.pdf",
+            "title": "Apple 2023 Annual Report"
+        },
+        {
+            "filename": "Google 2024 Annual Report.pdf",
+            "title": "Google 2024 Annual Report"
+        }
+    ],
+    "persona": {
+        "role": "Investment Analyst"
+    },
+    "job_to_be_done": {
+        "task": "Analyze revenue trends, R&D investments, and market positioning strategies"
+    }
+}

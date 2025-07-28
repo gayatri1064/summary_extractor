@@ -1,0 +1,128 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Catalysts - Chemistry LibreTexts.pdf",
+            "Comparison and Competition Between SN1, SN2, E1 and E2 - Chemistry LibreTexts.pdf",
+            "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "Rate Laws - Chemistry LibreTexts.pdf",
+            "The Arrhenius Law - Activation Energies - Chemistry LibreTexts.pdf"
+        ],
+        "persona": "Undergraduate Chemistry Student",
+        "job_to_be_done": "Identify key concepts and mechanisms for exam preparation on reaction kinetics",
+        "processing_timestamp": "2025-07-28T07:45:25.286296"
+    },
+    "extracted_sections": [
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "section_title": "7/28/25, 2:33 AM",
+            "importance_rank": 1,
+            "page_number": 2
+        },
+        {
+            "document": "Comparison and Competition Between SN1, SN2, E1 and E2 - Chemistry LibreTexts.pdf",
+            "section_title": "7/28/25, 2:29 AM",
+            "importance_rank": 2,
+            "page_number": 3
+        },
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "section_title": "7/28/25, 2:33 AM",
+            "importance_rank": 3,
+            "page_number": 1
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "section_title": "7/28/25, 2:26 AM",
+            "importance_rank": 4,
+            "page_number": 7
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "section_title": "7/28/25, 2:26 AM",
+            "importance_rank": 5,
+            "page_number": 3
+        },
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "section_title": ". The",
+            "importance_rank": 6,
+            "page_number": 2
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "section_title": ". Table ",
+            "importance_rank": 7,
+            "page_number": 6
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "section_title": "7/28/25, 2:26 AM",
+            "importance_rank": 8,
+            "page_number": 6
+        },
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "section_title": "Concentration",
+            "importance_rank": 9,
+            "page_number": 1
+        },
+        {
+            "document": "The Arrhenius Law - Activation Energies - Chemistry LibreTexts.pdf",
+            "section_title": "6.2.3.3: The Arrhenius Law - Activation Energies",
+            "importance_rank": 10,
+            "page_number": 1
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "refined_text": "10.3: Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts https://chem.libretexts.org/Courses/Chabot_College/Introduction_to_General_Organic_and_Biochemistry/10%3A_Reaction_Rates_and_Equilibriu\u2026 2/2 12.4: Rate Laws Explain the form and function of a rate law Use rate laws to calculate reaction rates Use rate and concentration data to identify reaction orders and derive rate laws As described in the previous module, the rate of a reaction is affected by the concentrations of reactants. Rate laws or rate equations are mathematical expressions that describe the relationship between the rate of a chemical reaction and the concentration of its reactants. In general, a rate law (or differential rate law, as it is sometimes called) takes this",
+            "page_number": 2
+        },
+        {
+            "document": "Comparison and Competition Between SN1, SN2, E1 and E2 - Chemistry LibreTexts.pdf",
+            "refined_text": "8.4: Comparison and Competition Between SN1, SN2, E1 and E2 - Chemistry LibreTexts https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_I_(Liu)/08%3A_Elimination_Reactions/8.04%3A_Comparison_an\u2026 3/3 10.3: Effects of Temperature, Concentration, and Catalysts on Reaction Rates Describe how temperatures, concentration of reactant, and a catalyst affect the reaction rate. By their nature, some reactions occur very quickly, while others are very slow. However, certain changes in the reaction conditions can have an effect on the rate of a given chemical reaction. Collision theory can be utilized to explain these rate effects. Concentration Increasing the concentration of one or more of the reacting substances generally increases the reaction rate.",
+            "page_number": 3
+        },
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "refined_text": "10.3: Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts https://chem.libretexts.org/Courses/Chabot_College/Introduction_to_General_Organic_and_Biochemistry/10%3A_Reaction_Rates_and_Equilibriu\u2026 1/2 Figure  : The addition of a catalyst to a reaction lowers the activation energy, increasing the rate of the reaction. The activation energy of the uncatalyzed reaction is shown by  , while the catalyzed reaction is shown by  . The heat of reaction   is unchanged by the presence of the catalyst.",
+            "page_number": 1
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "refined_text": "12.4: Rate Laws - Chemistry LibreTexts https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/12%3A_Kinetics/12.04%3A_Rate_Laws 7/7 6.2.3.3: The Arrhenius Law - Activation Energies All molecules possess a certain minimum amount of energy. When molecules collide, the kinetic energy of the molecules can be used to stretch, bend, and ultimately break bonds, leading to chemical reactions. If molecules move too slowly with little kinetic energy, or collide with improper orientation, they do not react and simply bounce off each other. However, if the molecules are moving fast enough with a proper collision orientation, such that the kinetic energy upon collision is greater than the minimum energy barrier, then a reaction occurs. The minimum energy requirement that must be met for a chemical reaction to",
+            "page_number": 7
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "refined_text": "12.4: Rate Laws - Chemistry LibreTexts https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/12%3A_Kinetics/12.04%3A_Rate_Laws 3/7 3. Determine the value of  k  from one set of concentrations and the corresponding rate . The large value of  k",
+            "page_number": 3
+        },
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "refined_text": "heat of reaction   is unchanged by the presence of the catalyst. Catalysts are extremely important parts of many chemical reactions. Enzymes in your body act as nature's catalysts, allowing important biochemical reactions to occur at reasonable rates. Chemical companies constantly search for new and better catalysts to make reactions go faster and thus make the company more profitable. 10.3: Effects of Temperature, Concentration, and Catalysts on Reaction Rates  is shared under a",
+            "page_number": 2
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "refined_text": " summarizes the rate constant units for common reaction orders.",
+            "page_number": 6
+        },
+        {
+            "document": "Rate Laws - Chemistry LibreTexts.pdf",
+            "refined_text": "12.4: Rate Laws - Chemistry LibreTexts https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/12%3A_Kinetics/12.04%3A_Rate_Laws 6/7 rate constant ( k ) proportionality constant in the relationship between reaction rate and concentrations of reactants rate law (also, rate equation) mathematical equation showing the dependence of reaction rate on the rate constant and the concentration of one or more reactants",
+            "page_number": 6
+        },
+        {
+            "document": "Effects of Temperature, Concentration, and Catalysts on Reaction Rates - Chemistry LibreTexts.pdf",
+            "refined_text": "Increasing the concentration of one or more of the reacting substances generally increases the reaction rate. When more particles are present in a given amount of space, a greater number of collisions will naturally occur between those particles. Since the rate of a reaction is dependent on the frequency of collisions between the reactants, the rate increases as the concentration increases.",
+            "page_number": 1
+        },
+        {
+            "document": "The Arrhenius Law - Activation Energies - Chemistry LibreTexts.pdf",
+            "refined_text": "All molecules possess a certain minimum amount of energy. When molecules collide, the kinetic energy of the molecules can be used to stretch, bend, and ultimately break bonds, leading to chemical reactions. If molecules move too slowly with little kinetic energy, or collide with improper orientation, they do not react and simply bounce off each other. However, if the molecules are moving fast enough with a proper collision orientation, such that the kinetic energy upon collision is greater than the minimum energy barrier, then a reaction occurs. The minimum energy requirement that must be met for a chemical reaction to occur is called the activation energy,  .",
+            "page_number": 1
+        }
+    ]
+}
