@@ -6,7 +6,7 @@ import re
 
 nltk.download("punkt")
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("models/minilm")
 
 def clean_sentence(s: str) -> str:
     s = s.strip()

@@ -11,8 +11,8 @@ from app.summarizer import summarize_text
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
 # Load bi-encoder and cross-encoder models
-bi_encoder = SentenceTransformer('all-MiniLM-L6-v2')
-cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+bi_encoder = SentenceTransformer('models/minilm')
+cross_encoder = CrossEncoder("models/cross_minilm")
 
 COLLECTIONS_DIR = "collections"
 
