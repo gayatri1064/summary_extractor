@@ -35,7 +35,13 @@ def rank_sections(
     Returns:
         List[Dict]: Ranked sections with importance scores and ranks.
     """
-    # Rich query context
+    # Rich, domain-agnostic query context
+    cross_query = (
+        f"You are acting as a {persona}. "
+        f"Your current task is: {task}. "
+        f"Identify the most relevant and actionable content that can help accomplish this task effectively."
+    )
+
     query_variants = [
         f"{persona} needs to {task}",
         f"The job is: {task}",
@@ -67,7 +73,7 @@ def rank_sections(
     preselected = scored_sections[:preselect_k]
 
     cross_inputs = [
-        [f"{persona} needs to {task}", f"{s.get('heading', '')}. {s['text']}"]
+        [cross_query, f"{s.get('heading', '')}. {s['text']}"]
         for s in preselected
     ]
     cross_scores = cross_encoder.predict(cross_inputs)
